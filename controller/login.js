@@ -31,8 +31,6 @@ module.exports = class Login extends controller {
                 let sess = new session(this.req.session);
                 sess.setAuthInfo(username);
                 action = true;
-            } else {
-                action = false;
             }
         }
         this.res.send({action: action});
