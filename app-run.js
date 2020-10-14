@@ -4,7 +4,7 @@ try {
         console.log('app is running');
     })
 } catch (e) {
-    app.response.send('Hello');
+    app.response.send('Sorry! Server is in maintenance! Please try later');
     console.log(e);
 }
 
